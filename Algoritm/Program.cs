@@ -12,11 +12,16 @@
             parts.Add(new User() { Login = "uhlol", Name = "Жорик", IsPremium = true });
 
             foreach (var item in parts) {
+                Console.WriteLine($"Привет, {item.Name}!");
                 if (!item.IsPremium)
                 {
                     ShowAds();
                 }
             }
+        }
+        public static void Greeting()
+        {
+
         }
         public static void ShowAds()
         {
